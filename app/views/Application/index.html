@@ -1,13 +1,4 @@
 #{extends 'main.html' /}
-#{set title:'Home' /}
+#{set title:'index.html' /}
 
-#{ifnot itemList}
-	No Item Found
-#{/ifnot}
-<ul>
-	#{list items:itemList, as:'itemDetail'}
-		<li>
-			<input type="label" value="${itemDetail.getTitle()}"></input>
-		</li>
-	#{/list}
-</ul>
+<a href="@{Application.addBook()}">Add Book</a>

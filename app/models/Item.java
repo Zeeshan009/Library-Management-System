@@ -1,7 +1,7 @@
 package models;
+
 import play.*;
 import play.db.jpa.*;
-
 import javax.persistence.*;
 import java.util.*;
 
@@ -13,6 +13,7 @@ public class Item extends Model{
 		this.title = title;
 		this.creator = creator;
 	}
+	
 	public String getTitle(){
 		return title;
 	}
