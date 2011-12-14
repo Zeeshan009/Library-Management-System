@@ -1,0 +1,12 @@
+#{extends 'main.html' /}
+#{set title:'addBook.html' /}
+
+<form method="post" action="@{Application.addBookToList()}">
+	<input type="label" value="Title"></input>
+	<input type="text" name="title"></input>
+	<input type="label" value="Author"></input>
+	<input type="text" name="creator"></input>
+	<input type="submit" value="Add"></input>
+</form>
+
+<a href="@{Application.index()}">Get List Of Books</a>

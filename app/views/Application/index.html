@@ -1,4 +1,13 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
-#{welcome /}
+#{ifnot itemList}
+	No Item Found
+#{/ifnot}
+<ul>
+	#{list items:itemList, as:'itemDetail'}
+		<li>
+			<input type="label" value="${itemDetail.getTitle()}"></input>
+		</li>
+	#{/list}
+</ul>
