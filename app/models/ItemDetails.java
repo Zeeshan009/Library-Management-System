@@ -12,6 +12,7 @@ public class ItemDetails extends Model{
 	private boolean isIssued;
 	private boolean isReserved;	
 	public ItemDetails(Item item){
+		if(item == null) throw new RuntimeException();
 		this.item = item;
 	}
 	

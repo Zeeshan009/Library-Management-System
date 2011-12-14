@@ -10,6 +10,9 @@ public class Item extends Model{
 	private final String creator;
 
 	public Item(String title, String creator){
+		if(title == null || title.isEmpty() || creator == null || creator.isEmpty()){
+			throw new RuntimeException();
+		}
 		this.title = title;
 		this.creator = creator;
 	}
