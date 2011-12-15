@@ -1,6 +1,7 @@
 package controllers;
 
 import play.*;
+import play.db.jpa.Model;
 import play.mvc.*;
 
 import java.util.*;
@@ -9,23 +10,26 @@ import models.*;
 
 public class Application extends Controller {
 
-	public static ItemDetails itemDetails;
     public static void listBook() {
-    	List itemList = ItemDetails.find("order by id desc", null).fetch();
-    	render(itemList);
+    	List itemList = Item.find("order by id",null).fetch();
+    	List itemRegistryList = ItemRegistry.find("order by id", null).fetch();
+    	render(itemList,itemRegistryList);
     }
+    
     
     public static void addBook(){    	
     	render();
     }
+
     
-    public static void addBookToList(String title,String creator){
-    	Book book = new Book(title,creator);
-    	itemDetails = new ItemDetails(book).save();
+    public static void addItemToList(String title,String creator){
+    	Item item = new Movie(title,creator).save();
+    	new ItemRegistry().save();
     	addBook();
     }
     
     public static void index(){
     	render();
     }
+
 }

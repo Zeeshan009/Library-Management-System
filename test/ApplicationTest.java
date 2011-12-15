@@ -24,4 +24,10 @@ public class ApplicationTest extends FunctionalTest {
     	Response response = GET("/listbook");
     	assertIsOk(response);
     }
+    
+    @Test
+    public void shouldGetItemByTitle(){
+    	Response response = GET("/getItem");
+    	assertIsOk(response);
+    }
 }

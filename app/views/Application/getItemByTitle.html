@@ -1,0 +1,13 @@
+#{extends 'main.html' /}
+#{set title:'getItemByTitle.html' /}
+
+#{ifnot itemList}
+	No Item Found With The Given Title
+#{/ifnot}
+<ul>
+	#{list items:itemList, as:'itemDetail'}
+		<li>
+			<input type="label" value="${itemDetail.item.title}"></input>
+		</li>
+	#{/list}
+</ul>

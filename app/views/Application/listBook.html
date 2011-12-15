@@ -7,7 +7,14 @@
 <ul>
 	#{list items:itemList, as:'itemDetail'}
 		<li>
-			<input type="label" value="${itemDetail.getTitle()}"></input>
+			<input type="label" value="${itemDetail.id}"></input>
+			<input type="label" value="${itemDetail.title}"></input>
+		</li>
+	#{/list}
+		#{list items:itemRegistryList, as:'itemDetail'}
+		<li>
+			<input type="label" value="${itemDetail.isIssued}"></input>
+			<input type="label" value="${itemDetail.isReserved}"></input>
 		</li>
 	#{/list}
 </ul>
