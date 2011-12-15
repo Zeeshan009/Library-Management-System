@@ -24,6 +24,7 @@ public class ApplicationTest extends FunctionalTest {
     	Response response = GET("/listbook");
     	assertIsOk(response);
     }
+<<<<<<< HEAD
    @Test
    public void testSearchByAuthor(){
 	 Response response = GET("/searchByAuthor");
@@ -31,4 +32,13 @@ public class ApplicationTest extends FunctionalTest {
    }
    
   
+=======
+    
+    
+    @Test
+    public void shouldReturnListOfBooksOfGivenTitle(){
+    	Response response = GET("/searchItemByTitle");
+    	assertIsOk(response);
+    }
+>>>>>>> 3751d43862048e60cffa8bf1532745cc38c248f3
 }

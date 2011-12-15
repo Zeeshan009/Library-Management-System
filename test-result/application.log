@@ -1,5 +1,14 @@
+<<<<<<< HEAD
 15 Dec 2011 14:45:34,441 INFO  ~ Starting C:\Users\shobanam\Library-Management-System
 15 Dec 2011 14:45:34,841 WARN  ~ You're running Play! in DEV mode
 15 Dec 2011 14:45:34,904 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
 15 Dec 2011 14:45:38,429 INFO  ~ Connected to jdbc:mysql://localhost/library?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
 15 Dec 2011 14:45:39,020 INFO  ~ Application 'LibraryManagementSystem' is now started !
+=======
+15 Dec 2011 14:30:38,109 INFO  ~ Starting C:\Users\Sowmyas\Library-Management-System
+15 Dec 2011 14:30:38,536 WARN  ~ You're running Play! in DEV mode
+15 Dec 2011 14:30:38,600 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+15 Dec 2011 14:30:49,253 WARN  ~ Ignoring Application.searchItemByTitl (static params must be specified as key:'value',...)
+15 Dec 2011 14:30:50,511 INFO  ~ Connected to jdbc:mysql://localhost/library?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
+15 Dec 2011 14:30:51,187 INFO  ~ Application 'LibraryManagementSystem' is now started !
+>>>>>>> 3751d43862048e60cffa8bf1532745cc38c248f3

@@ -1,0 +1,8 @@
+#{extends 'main.html'/}
+#{set title :'searchItemByTitle'/}
+
+<form method="post" action="@{Application.searchItemWithThisTitle}">
+	<input type="label" value="Enter the title"></input>
+	<input type="text" name="title"/>
+	<input type="submit" value="Search"/>
+</form>
