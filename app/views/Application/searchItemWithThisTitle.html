@@ -1,17 +1,46 @@
-#{extends 'main.html'/}
-#{set title :'searchItemWithThisTitle'/}
+#{extends 'main.html' /}
+#{set title:'searchItemWithThisTitle.html' /}
 
-#{ifnot itemListWithGivenTitle}
-No items found
+
+#{ifnot itemList}
+	No Item Found
 #{/ifnot}
-
-<ul>
-	#{list items:itemListWithGivenTitle,as :'item'}
-		<li><input type="label" value="${item.title}"/>
-		<input type="label" value="${item.creator}"/>
+<table>
+<tr>
+	<td>
+	<table>
+	<tr>
+		<td>Item ID</td>
+		<td>Item Type</td>
+		<td>Item Title</td>
+		<td>Item Creator</td>
+	</tr>
+	#{list items:itemListWithGivenTitle, as:'itemDetail'}
+	
+		<tr>
+			<td><input type="label" value="${itemDetail.id}"></input></td>
+			<td><input type="label" value="${itemDetail.getClass()}"></input></td>
+			<td><input type="label" value="${itemDetail.title}"></input></td>
+			<td><input type="label" value="${itemDetail.creator}"></input></td>
+		</tr>
+				
+	 #{/list}
+	 </table>
+	 </td>
+	
+		<td>
+		 <table>
+		 <tr>
+		 	<td>Issued ?</td>
+		 	<td>Reserved ?</td>
+		 </tr>
+		#{list items:itemRegistryList, as:'itemDetail'}
+		<tr>
+			<td><input type="label" value="${itemDetail.isIssued}"></input></td>
+			<td><input type="label" value="${itemDetail.isReserved}"></input></td>
+		</tr>
 	#{/list}
-	#{list items:itemList,as :'item'}
-		<li><input type="label" value="${item.isIssued}"/>
-		<input type="label" value="${item.isReserved}"/>
-	#{/list}
-</ul>
+	</table>
+</td>
+</tr>
+</table>

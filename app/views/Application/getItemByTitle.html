@@ -4,10 +4,26 @@
 #{ifnot itemList}
 	No Item Found With The Given Title
 #{/ifnot}
-<ul>
+
+<table>
+<tr>
+	<td>
+	<table>
+		<tr>
+		<td>Item ID</td>
+		<td>Item Type</td>
+		<td>Item Title</td>
+		<td>Item Creator</td>
+	</tr>
 	#{list items:itemList, as:'itemDetail'}
-		<li>
-			<input type="label" value="${itemDetail,title}"></input>
-		</li>
+		<tr>
+			<td><input type="label" value="${itemDetail.id}"></input></td>
+			<td><input type="label" value="${itemDetail.getClass()}"></input></td>
+			<td><input type="label" value="${itemDetail.title}"></input></td>
+			<td><input type="label" value="${itemDetail.creator}"></input></td>
+		</tr>
 	#{/list}
-</ul.
+	</table>
+</td>
+</tr>
+</table>

@@ -10,20 +10,18 @@ import models.*;
 
 public class Application extends Controller {
 
+	public static void searchItemByAuthor() {
+		render();
+	}
 
-    public static void searchItemByAuthor(){
-    	render();
-    }
-
-    public static void searchItemByAuthor1(String author){
-    	List itemList=Item.find("byCreator",author).fetch();
-    	List<ItemRegistry> itemRegistryList = null;
-    	for(Object item:itemList){
-    		itemRegistryList=ItemRegistry.find("byId",((Item)item).getId()).fetch();
-    	}
-    	render(itemList,itemRegistryList);
-    }
-
+	public static void searchItemByAuthorResult(String author) {
+		List itemList = Item.find("byCreator", author).fetch();
+		List itemRegistryList = new ArrayList();
+		for (Object item : itemList) {
+			itemRegistryList.add(ItemRegistry.findById(((Model) item).getId()));
+		}
+		render(itemList, itemRegistryList);
+	}
 
 	public static void listBook() {
 		List itemList = Item.findAll();
@@ -43,38 +41,31 @@ public class Application extends Controller {
 		} else if (itemType.trim().equalsIgnoreCase("Book")) {
 			new Book(title, creator).save();
 			new ItemRegistry().save();
-		}else{
+		} else {
 			inputTypeError();
 		}
-		
+
 		addItem();
 	}
 
-	public static void searchItemByTitle()
-	{
-			render();
+	public static void searchItemByTitle() {
+		render();
 	}
-	public static void searchItemWithThisTitle(String title)
-	{
-		List itemListWithGivenTitle=Item.find("byTitle", title).fetch();
-		List itemsInRegistry=ItemRegistry.findAll();
-		List itemList=new ArrayList();
-		for(Object item: itemListWithGivenTitle)
-		{
-			for(Object itemRegis :itemsInRegistry)
-			{
-				if(((Model) item).getId().equals(((Model) itemRegis).getId()))
-					itemList.add(itemRegis);
-			}
+
+	public static void searchItemWithThisTitle(String title) {
+		List itemListWithGivenTitle = Item.find("byTitle", title).fetch();
+		List itemRegistryList = new ArrayList();
+		for (Object item : itemListWithGivenTitle) {
+			itemRegistryList.add(ItemRegistry.findById(((Model) item).getId()));
 		}
-	
-		render(itemListWithGivenTitle,itemList);
+		render(itemListWithGivenTitle, itemRegistryList);
 	}
+
 	public static void index() {
 		render();
 	}
 
-	private static void inputTypeError(){
+	private static void inputTypeError() {
 		render();
 	}
 }
