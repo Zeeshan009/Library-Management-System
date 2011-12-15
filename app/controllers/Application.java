@@ -11,8 +11,8 @@ import models.*;
 public class Application extends Controller {
 
 	public static void listBook() {
-		List itemList = Item.find("order by id", null).fetch();
-		List itemRegistryList = ItemRegistry.find("order by id", null).fetch();
+		List itemList = Item.findAll();
+		List itemRegistryList = ItemRegistry.findAll();
 		render(itemList, itemRegistryList);
 	}
 
@@ -24,10 +24,14 @@ public class Application extends Controller {
 			String itemType) {
 		if (itemType.trim().equalsIgnoreCase("Movie")) {
 			new Movie(title, creator).save();
+			new ItemRegistry().save();
 		} else if (itemType.trim().equalsIgnoreCase("Book")) {
 			new Book(title, creator).save();
+			new ItemRegistry().save();
+		}else{
+			inputTypeError();
 		}
-		new ItemRegistry().save();
+		
 		addItem();
 	}
 
@@ -35,4 +39,7 @@ public class Application extends Controller {
 		render();
 	}
 
+	private static void inputTypeError(){
+		render();
+	}
 }

@@ -8,7 +8,9 @@
 	#{list items:itemList, as:'itemDetail'}
 		<li>
 			<input type="label" value="${itemDetail.id}"></input>
+			<input type="label" value="${itemDetail.getClass()}"></input>
 			<input type="label" value="${itemDetail.title}"></input>
+			<input type="label" value="${itemDetail.creator}"></input>
 		</li>
 	#{/list}
 		#{list items:itemRegistryList, as:'itemDetail'}
