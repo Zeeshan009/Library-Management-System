@@ -10,26 +10,29 @@ import models.*;
 
 public class Application extends Controller {
 
-    public static void listBook() {
-    	List itemList = Item.find("order by id",null).fetch();
-    	List itemRegistryList = ItemRegistry.find("order by id", null).fetch();
-    	render(itemList,itemRegistryList);
-    }
-    
-    
-    public static void addBook(){    	
-    	render();
-    }
+	public static void listBook() {
+		List itemList = Item.find("order by id", null).fetch();
+		List itemRegistryList = ItemRegistry.find("order by id", null).fetch();
+		render(itemList, itemRegistryList);
+	}
 
-    
-    public static void addItemToList(String title,String creator){
-    	Item item = new Movie(title,creator).save();
-    	new ItemRegistry().save();
-    	addBook();
-    }
-    
-    public static void index(){
-    	render();
-    }
+	public static void addItem() {
+		render();
+	}
+
+	public static void addItemToList(String title, String creator,
+			String itemType) {
+		if (itemType.trim().equalsIgnoreCase("Movie")) {
+			new Movie(title, creator).save();
+		} else if (itemType.trim().equalsIgnoreCase("Book")) {
+			new Book(title, creator).save();
+		}
+		new ItemRegistry().save();
+		addItem();
+	}
+
+	public static void index() {
+		render();
+	}
 
 }
