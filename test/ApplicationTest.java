@@ -1,4 +1,7 @@
 import org.junit.*;
+
+import controllers.Application;
+
 import play.test.*;
 import play.mvc.*;
 import play.mvc.Http.*;
@@ -13,9 +16,9 @@ public class ApplicationTest extends FunctionalTest {
 		assertContentType("text/html", response);
         assertCharset(play.Play.defaultWebEncoding, response);
 	}
-    @Test
-    public void testAddBook() {
-        Response response = GET("/addbook");
+//    @Test
+    public void testAddItemToList() {
+        Response response = GET("/additem");
         assertIsOk(response);
     }
     
@@ -25,9 +28,25 @@ public class ApplicationTest extends FunctionalTest {
     	assertIsOk(response);
     }
     
+//    @Test
+//    public void shouldGetItemByTitle(){
+//    	Response response = GET("/getItem");
+//    	assertIsOk(response);
+//    }
     @Test
-    public void shouldGetItemByTitle(){
-    	Response response = GET("/getItem");
-    	assertIsOk(response);
+	public void shouldIssueAItem(){
+    	//Application.addItemToList("Head first java", "Kent black", "Book");
+		assertTrue(Application.issueItem((long)1));
+		assertFalse(Application.issueItem((long)1));
+	}
+    
+    @Test
+    public void shouldReserveAItem(){
+    	assertTrue(Application.reserveItem((long)1));
+    	assertFalse(Application.reserveItem((long)1));
+    }
+    @Test
+    public void shouldReturnAItem(){
+    	assertTrue(Application.returnItem((long)1));
     }
 }

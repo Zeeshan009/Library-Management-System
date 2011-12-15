@@ -35,4 +35,37 @@ public class Application extends Controller {
 		render();
 	}
 
+	public static boolean issueItem(long i) {
+		ItemRegistry itemList = ItemRegistry.findById((long) 1);
+		if (!itemList.isIssued()) {
+			if(itemList.isReserved()){
+				itemList.setReserved(false);
+			}
+			itemList.setIssued(true);
+			itemList.save();
+			return true;
+		}
+		return false;
+	}
+
+	public static boolean returnItem(long i) {
+		ItemRegistry itemList=ItemRegistry.findById((long)1);
+		if(itemList.isIssued())
+		{
+			itemList.setIssued(false);
+			itemList.save();
+			return true;
+		}
+		return false;
+	}
+
+	public static boolean reserveItem(long i) {
+		ItemRegistry itemList=ItemRegistry.findById((long)1);
+		if(itemList.isIssued()&&!itemList.isReserved()){
+			itemList.setReserved(true);
+			itemList.save();
+			return true;
+		}
+		return false;
+	}
 }
