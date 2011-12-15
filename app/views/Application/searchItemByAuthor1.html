@@ -1,0 +1,19 @@
+#{extends 'main.html' /}
+#{set title:'searchItemByAuthor1.html' /}
+#{ifnot itemList}
+	No Item Found
+#{/ifnot}
+<ul>
+	#{list items:itemList, as:'itemDetail'}
+		<li>
+		<input type="label" value="BOOK TITLE"></input>
+			<input type="label" value="${itemDetail.title}"></input>
+		</li>
+	 #{/list}
+	 #{list items:itemRegistryList, as:'itemRegistryDetail'}
+		<li>
+		    <input type="label" value="ISSUE STATUS"></input>
+			<input type="label" value="${itemRegistryDetail.isIssued()}"></input>
+		</li>
+	 #{/list}
+<ul>

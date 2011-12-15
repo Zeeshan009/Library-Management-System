@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<testsuite failures="0" time="0.067" errors="0" skipped="0" tests="3" name="ApplicationTest">
-  <testcase classname="ApplicationTest" name="testIndex" time="0.025">
+<<<<<<< HEAD
+<testsuite failures="0" time="0.19" errors="0" skipped="0" tests="4" name="ApplicationTest">
+  <testcase classname="ApplicationTest" name="testIndex" time="0.038">
       </testcase>
-  <testcase classname="ApplicationTest" name="testAddBook" time="0.024">
+  <testcase classname="ApplicationTest" name="testAddBook" time="0.025">
       </testcase>
-  <testcase classname="ApplicationTest" name="testListBook" time="0.018">
+  <testcase classname="ApplicationTest" name="testListBook" time="0.046">
+      </testcase>
+  <testcase classname="ApplicationTest" name="testSearchByAuthor" time="0.081">
+=======
+<testsuite failures="0" time="0.088" errors="0" skipped="0" tests="4" name="ApplicationTest">
+  <testcase classname="ApplicationTest" name="testIndex" time="0.014">
+      </testcase>
+  <testcase classname="ApplicationTest" name="testAddBook" time="0.01">
+      </testcase>
+  <testcase classname="ApplicationTest" name="testListBook" time="0.012">
+      </testcase>
+  <testcase classname="ApplicationTest" name="shouldReturnListOfBooksOfGivenTitle" time="0.052">
+>>>>>>> 3751d43862048e60cffa8bf1532745cc38c248f3
       </testcase>
 </testsuite>

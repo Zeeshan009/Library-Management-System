@@ -12,11 +12,13 @@
 			<input type="label" value="${itemDetail.title}"></input>
 			<input type="label" value="${itemDetail.creator}"></input>
 		</li>
-	#{/list}
+	 #{/list}
 		#{list items:itemRegistryList, as:'itemDetail'}
 		<li>
 			<input type="label" value="${itemDetail.isIssued}"></input>
 			<input type="label" value="${itemDetail.isReserved}"></input>
 		</li>
+	
 	#{/list}
+
 </ul>
