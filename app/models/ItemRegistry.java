@@ -14,4 +14,8 @@ public class ItemRegistry extends Model{
 		isIssued = false;
 		isReserved = false;
 	}
+	public boolean isIssued()
+	{
+		return isIssued;
+	}
 }

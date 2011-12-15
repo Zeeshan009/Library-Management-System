@@ -6,7 +6,7 @@
 GET     /                                       Application.index
 GET 	/addbook								Application.addBook
 GET		/listbook								Application.listBook
- 
+GET     /searchByAuthor                         Application.searchItemByAuthor 
 # Ignore favicon requests
 GET     /favicon.ico                            404
 
