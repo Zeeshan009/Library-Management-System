@@ -74,7 +74,7 @@ public class Application extends Controller {
 		render();
 	}
 
-<<<<<<< HEAD
+
 	public static boolean issueItem(long i) {
 		ItemRegistry itemList = ItemRegistry.findById((long) 1);
 		if (!itemList.isIssued()) {
@@ -107,9 +107,9 @@ public class Application extends Controller {
 			return true;
 		}
 		return false;
-=======
+
 	private static void inputTypeError(){
 		render();
->>>>>>> e96cff92226720cde0b6954db6ba30e4395a2cd2
+
 	}
 }

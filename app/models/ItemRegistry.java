@@ -14,7 +14,7 @@ public class ItemRegistry extends Model{
 		isIssued = false;
 		isReserved = false;
 	}
-<<<<<<< HEAD
+
 	public boolean isIssued() {
 		return isIssued;
 	}
@@ -30,21 +30,4 @@ public class ItemRegistry extends Model{
 		this.isReserved = isReserved;
 		this.save();
 	}
-	
-=======
-
-	public boolean isIssued()
-	{
-		return isIssued;
-	}
-
-	private boolean getIssueStatus()
-	{
-		return isIssued;
-	}
-	public boolean getReservedStatus()
-	{
-		return isReserved;
-	}
->>>>>>> e96cff92226720cde0b6954db6ba30e4395a2cd2
 }
