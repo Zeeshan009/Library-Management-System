@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
+<<<<<<< HEAD
 <testsuite failures="0" time="0.028" errors="0" skipped="0" tests="5" name="ApplicationTest">
   <testcase classname="ApplicationTest" name="testIndex" time="0.013">
       </testcase>
@@ -10,5 +11,26 @@
   <testcase classname="ApplicationTest" name="shouldReserveAItem" time="0">
       </testcase>
   <testcase classname="ApplicationTest" name="shouldReturnAItem" time="0">
+=======
+<<<<<<< HEAD
+<testsuite failures="0" time="0.19" errors="0" skipped="0" tests="4" name="ApplicationTest">
+  <testcase classname="ApplicationTest" name="testIndex" time="0.038">
+      </testcase>
+  <testcase classname="ApplicationTest" name="testAddBook" time="0.025">
+      </testcase>
+  <testcase classname="ApplicationTest" name="testListBook" time="0.046">
+      </testcase>
+  <testcase classname="ApplicationTest" name="testSearchByAuthor" time="0.081">
+=======
+<testsuite failures="0" time="0.088" errors="0" skipped="0" tests="4" name="ApplicationTest">
+  <testcase classname="ApplicationTest" name="testIndex" time="0.014">
+      </testcase>
+  <testcase classname="ApplicationTest" name="testAddBook" time="0.01">
+      </testcase>
+  <testcase classname="ApplicationTest" name="testListBook" time="0.012">
+      </testcase>
+  <testcase classname="ApplicationTest" name="shouldReturnListOfBooksOfGivenTitle" time="0.052">
+>>>>>>> 3751d43862048e60cffa8bf1532745cc38c248f3
+>>>>>>> e96cff92226720cde0b6954db6ba30e4395a2cd2
       </testcase>
 </testsuite>

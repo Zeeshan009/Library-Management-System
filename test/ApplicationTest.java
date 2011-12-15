@@ -27,6 +27,16 @@ public class ApplicationTest extends FunctionalTest {
     	Response response = GET("/listbook");
     	assertIsOk(response);
     }
+<<<<<<< HEAD
+   @Test
+   public void testSearchByAuthor(){
+	 Response response = GET("/searchByAuthor");
+	 assertIsOk(response);
+   }
+   
+  
+=======
+    
     
 //    @Test
 //    public void shouldGetItemByTitle(){
@@ -34,6 +44,7 @@ public class ApplicationTest extends FunctionalTest {
 //    	assertIsOk(response);
 //    }
     @Test
+<<<<<<< HEAD
 	public void shouldIssueAItem(){
     	//Application.addItemToList("Head first java", "Kent black", "Book");
 		assertTrue(Application.issueItem((long)1));
@@ -48,5 +59,11 @@ public class ApplicationTest extends FunctionalTest {
     @Test
     public void shouldReturnAItem(){
     	assertTrue(Application.returnItem((long)1));
+=======
+    public void shouldReturnListOfBooksOfGivenTitle(){
+    	Response response = GET("/searchItemByTitle");
+    	assertIsOk(response);
+>>>>>>> e96cff92226720cde0b6954db6ba30e4395a2cd2
     }
+>>>>>>> 3751d43862048e60cffa8bf1532745cc38c248f3
 }
