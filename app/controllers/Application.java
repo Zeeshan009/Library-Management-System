@@ -65,7 +65,48 @@ public class Application extends Controller {
 		render();
 	}
 
+	public static void issueItem(String itemId) {
+		boolean issueResult = false;
+		ItemRegistry itemList = ItemRegistry.findById((long) Integer
+				.parseInt(itemId));
+		if (!itemList.isIssued()) {
+			if (itemList.isReserved()) {
+				itemList.setReserved(false);
+			}
+			itemList.setIssued(true);
+			itemList.save();
+			issueResult = true;
+			render(issueResult);
+		}
+		render(issueResult);
+	}
+
+	public static void returnItem(String itemId) {
+		boolean returnResult = false;
+		ItemRegistry itemList = ItemRegistry.findById((long) Integer
+				.parseInt(itemId));
+		itemList.setIssued(false);
+		itemList.save();
+		returnResult = true;
+		render(returnResult);
+	}
+
+	public static boolean reserveItem(String itemId) {
+		ItemRegistry itemList = ItemRegistry.findById((long) Integer
+				.parseInt(itemId));
+		if (itemList.isIssued() && !itemList.isReserved()) {
+			itemList.setReserved(true);
+			itemList.save();
+			return true;
+		}
+		return false;
+	}
+
 	private static void inputTypeError() {
+		render();
+	}
+
+	public static void issueBook() {
 		render();
 	}
 }

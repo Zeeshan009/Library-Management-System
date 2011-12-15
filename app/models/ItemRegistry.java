@@ -15,17 +15,19 @@ public class ItemRegistry extends Model{
 		isReserved = false;
 	}
 
-	public boolean isIssued()
-	{
+	public boolean isIssued() {
 		return isIssued;
 	}
-
-	private boolean getIssueStatus()
-	{
-		return isIssued;
+	
+	public void setIssued(boolean isIssued) {
+		this.isIssued = isIssued;
+		this.save();
 	}
-	public boolean getReservedStatus()
-	{
+	public boolean isReserved() {
 		return isReserved;
+	}
+	public void setReserved(boolean isReserved) {
+		this.isReserved = isReserved;
+		this.save();
 	}
 }

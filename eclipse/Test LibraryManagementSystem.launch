@@ -11,19 +11,27 @@
         <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;runtimeClasspathEntry containerPath=&quot;org.eclipse.jdt.launching.JRE_CONTAINER&quot; javaProject=&quot;LibraryManagementSystem&quot; path=&quot;1&quot; type=&quot;4&quot;/&gt;&#10;"/>
         <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;runtimeClasspathEntry internalArchive=&quot;/LibraryManagementSystem/conf&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;&#10;"/>
 <<<<<<< HEAD
+        <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry externalArchive=&quot;C:\Users\priyadar\Downloads\play-1.2.4\play-1.2.4/modules/testrunner/lib/play-testrunner.jar&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;&#13;&#10;"/>
+=======
+<<<<<<< HEAD
         <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry externalArchive=&quot;C:\Users\shobanam\Downloads\play-1.2.4/modules/testrunner/lib/play-testrunner.jar&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;&#13;&#10;"/>
 =======
         <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry externalArchive=&quot;E:\play-1.2.4\play-1.2.4/modules/testrunner/lib/play-testrunner.jar&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;&#13;&#10;"/>
 >>>>>>> 3751d43862048e60cffa8bf1532745cc38c248f3
+>>>>>>> e96cff92226720cde0b6954db6ba30e4395a2cd2
         <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;runtimeClasspathEntry id=&quot;org.eclipse.jdt.launching.classpathentry.defaultClasspath&quot;&gt;&#10;&lt;memento exportedEntriesOnly=&quot;false&quot; project=&quot;LibraryManagementSystem&quot;/&gt;&#10;&lt;/runtimeClasspathEntry&gt;&#10;"/>
     </listAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="false"/>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="play.server.Server"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="LibraryManagementSystem"/>
 <<<<<<< HEAD
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n -Dplay.debug=yes -Dplay.id=test -Dapplication.path=&quot;${project_loc:LibraryManagementSystem}&quot; -Djava.endorsed.dirs=&quot;C:\Users\priyadar\Downloads\play-1.2.4\play-1.2.4/framework/endorsed&quot; -javaagent:&quot;C:\Users\priyadar\Downloads\play-1.2.4\play-1.2.4/framework/play-1.2.4.jar&quot;"/>
+=======
+<<<<<<< HEAD
     <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n -Dplay.debug=yes -Dplay.id=test -Dapplication.path=&quot;${project_loc:LibraryManagementSystem}&quot; -Djava.endorsed.dirs=&quot;C:\Users\shobanam\Downloads\play-1.2.4/framework/endorsed&quot; -javaagent:&quot;C:\Users\shobanam\Downloads\play-1.2.4/framework/play-1.2.4.jar&quot;"/>
 =======
     <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n -Dplay.debug=yes -Dplay.id=test -Dapplication.path=&quot;${project_loc:LibraryManagementSystem}&quot; -Djava.endorsed.dirs=&quot;E:\play-1.2.4\play-1.2.4/framework/endorsed&quot; -javaagent:&quot;E:\play-1.2.4\play-1.2.4/framework/play-1.2.4.jar&quot;"/>
 >>>>>>> 3751d43862048e60cffa8bf1532745cc38c248f3
+>>>>>>> e96cff92226720cde0b6954db6ba30e4395a2cd2
 </launchConfiguration>
 

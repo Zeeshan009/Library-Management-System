@@ -1,0 +1,10 @@
+#{extends 'main.html' /}
+#{set title:'returnItem.html' /}
+
+#{ifnot returnResult}
+	Book Cannot be Returned. . .
+#{/ifnot}
+
+#{if returnResult}
+	Book Returned Successfully. . .
+#{/if}

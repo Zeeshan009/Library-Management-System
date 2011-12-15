@@ -1,4 +1,7 @@
 import org.junit.*;
+
+import controllers.Application;
+
 import play.test.*;
 import play.mvc.*;
 import play.mvc.Http.*;
@@ -13,32 +16,49 @@ public class ApplicationTest extends FunctionalTest {
 		assertContentType("text/html", response);
         assertCharset(play.Play.defaultWebEncoding, response);
 	}
-    @Test
-    public void testAddBook() {
-        Response response = GET("/addbook");
+//    @Test
+    public void testAddItemToList() {
+        Response response = GET("/additem");
         assertIsOk(response);
     }
     
     @Test
     public void testListBook(){
-    	Response response = GET("/listbook");
+    	Response response = GET("/issuebook");
     	assertIsOk(response);
     }
-<<<<<<< HEAD
+
    @Test
    public void testSearchByAuthor(){
 	 Response response = GET("/searchByAuthor");
 	 assertIsOk(response);
    }
    
-  
-=======
-    
-    
-    @Test
+     
+//    @Test
+//    public void shouldGetItemByTitle(){
+//    	Response response = GET("/getItem");
+//    	assertIsOk(response);
+//    }
+//    @Test
+
+//	public void shouldIssueAItem(){
+//    	//Application.addItemToList("Head first java", "Kent black", "Book");
+//		assertTrue(Application.issueItem("1"));
+//		assertFalse(Application.issueItem("1"));
+//	}
+////    
+//    @Test
+//    public void shouldReserveAItem(){
+//    	assertTrue(Application.reserveItem("1"));
+//    	assertFalse(Application.reserveItem("1"));
+//    }
+//    @Test
+//    public void shouldReturnAItem(){
+//    	assertTrue(Application.returnItem("1"));
+//}
     public void shouldReturnListOfBooksOfGivenTitle(){
     	Response response = GET("/searchItemByTitle");
     	assertIsOk(response);
     }
->>>>>>> 3751d43862048e60cffa8bf1532745cc38c248f3
 }

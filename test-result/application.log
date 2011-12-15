@@ -1,14 +1,193 @@
-<<<<<<< HEAD
-15 Dec 2011 14:45:34,441 INFO  ~ Starting C:\Users\shobanam\Library-Management-System
-15 Dec 2011 14:45:34,841 WARN  ~ You're running Play! in DEV mode
-15 Dec 2011 14:45:34,904 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-15 Dec 2011 14:45:38,429 INFO  ~ Connected to jdbc:mysql://localhost/library?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
-15 Dec 2011 14:45:39,020 INFO  ~ Application 'LibraryManagementSystem' is now started !
-=======
-15 Dec 2011 14:30:38,109 INFO  ~ Starting C:\Users\Sowmyas\Library-Management-System
-15 Dec 2011 14:30:38,536 WARN  ~ You're running Play! in DEV mode
-15 Dec 2011 14:30:38,600 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-15 Dec 2011 14:30:49,253 WARN  ~ Ignoring Application.searchItemByTitl (static params must be specified as key:'value',...)
-15 Dec 2011 14:30:50,511 INFO  ~ Connected to jdbc:mysql://localhost/library?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
-15 Dec 2011 14:30:51,187 INFO  ~ Application 'LibraryManagementSystem' is now started !
->>>>>>> 3751d43862048e60cffa8bf1532745cc38c248f3
+15 Dec 2011 17:39:30,282 INFO  ~ Starting E:\Work space\Library
+15 Dec 2011 17:39:30,656 WARN  ~ You're running Play! in DEV mode
+15 Dec 2011 17:39:30,718 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+15 Dec 2011 17:39:39,692 ERROR ~ 
+
+@68lkk68ga
+Internal Server Error (500) for request GET /
+
+Compilation error (In /test/ApplicationTest.java around line 47)
+The file /test/ApplicationTest.java could not be compiled. Error raised is : The method issueItem(String) in the type Application is not applicable for the arguments (long)
+
+play.exceptions.CompilationException: The method issueItem(String) in the type Application is not applicable for the arguments (long)
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:672)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:516)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:278)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:412)
+	at play.Play.start(Play.java:485)
+	at play.Play.detectChanges(Play.java:610)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+15 Dec 2011 17:39:45,039 ERROR ~ 
+
+@68lkk68ge
+Internal Server Error (500) for request GET /@tests
+
+Compilation error (In /test/ApplicationTest.java around line 47)
+The file /test/ApplicationTest.java could not be compiled. Error raised is : The method issueItem(String) in the type Application is not applicable for the arguments (long)
+
+play.exceptions.CompilationException: The method issueItem(String) in the type Application is not applicable for the arguments (long)
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:672)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:516)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:278)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:249)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:310)
+	at play.Play.detectChanges(Play.java:595)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+15 Dec 2011 17:39:47,588 ERROR ~ 
+
+@68lkk68gf
+Internal Server Error (500) for request GET /@tests
+
+Compilation error (In /test/ApplicationTest.java around line 47)
+The file /test/ApplicationTest.java could not be compiled. Error raised is : The method issueItem(String) in the type Application is not applicable for the arguments (long)
+
+play.exceptions.CompilationException: The method issueItem(String) in the type Application is not applicable for the arguments (long)
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:672)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:516)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:278)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:249)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:310)
+	at play.Play.detectChanges(Play.java:595)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+15 Dec 2011 17:40:54,180 ERROR ~ 
+
+@68lkk68gg
+Internal Server Error (500) for request GET /@tests
+
+Compilation error (In /test/ApplicationTest.java around line 47)
+The file /test/ApplicationTest.java could not be compiled. Error raised is : The method assertTrue(boolean) in the type Assert is not applicable for the arguments (void)
+
+play.exceptions.CompilationException: The method assertTrue(boolean) in the type Assert is not applicable for the arguments (void)
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:672)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:516)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:278)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:249)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:310)
+	at play.Play.detectChanges(Play.java:595)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+15 Dec 2011 17:41:11,800 ERROR ~ 
+
+@68lkk68gh
+Internal Server Error (500) for request GET /@tests
+
+Compilation error (In /test/ApplicationTest.java around line 47)
+The file /test/ApplicationTest.java could not be compiled. Error raised is : The method assertTrue(boolean) in the type Assert is not applicable for the arguments (void)
+
+play.exceptions.CompilationException: The method assertTrue(boolean) in the type Assert is not applicable for the arguments (void)
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:672)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:516)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:278)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:249)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:310)
+	at play.Play.detectChanges(Play.java:595)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+15 Dec 2011 17:41:12,403 ERROR ~ 
+
+@68lkk68gi
+Internal Server Error (500) for request GET /@tests
+
+Compilation error (In /test/ApplicationTest.java around line 47)
+The file /test/ApplicationTest.java could not be compiled. Error raised is : The method assertTrue(boolean) in the type Assert is not applicable for the arguments (void)
+
+play.exceptions.CompilationException: The method assertTrue(boolean) in the type Assert is not applicable for the arguments (void)
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:672)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:516)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:278)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:249)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:310)
+	at play.Play.detectChanges(Play.java:595)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+15 Dec 2011 17:41:12,905 ERROR ~ 
+
+@68lkk68gj
+Internal Server Error (500) for request GET /@tests
+
+Compilation error (In /test/ApplicationTest.java around line 47)
+The file /test/ApplicationTest.java could not be compiled. Error raised is : The method assertTrue(boolean) in the type Assert is not applicable for the arguments (void)
+
+play.exceptions.CompilationException: The method assertTrue(boolean) in the type Assert is not applicable for the arguments (void)
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:672)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:516)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:278)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:249)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:310)
+	at play.Play.detectChanges(Play.java:595)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+15 Dec 2011 17:41:13,351 ERROR ~ 
+
+@68lkk68gk
+Internal Server Error (500) for request GET /@tests
+
+Compilation error (In /test/ApplicationTest.java around line 47)
+The file /test/ApplicationTest.java could not be compiled. Error raised is : The method assertTrue(boolean) in the type Assert is not applicable for the arguments (void)
+
+play.exceptions.CompilationException: The method assertTrue(boolean) in the type Assert is not applicable for the arguments (void)
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:672)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:516)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:278)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:249)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:310)
+	at play.Play.detectChanges(Play.java:595)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+15 Dec 2011 17:41:35,285 INFO  ~ Connected to jdbc:mysql://localhost/library?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
+15 Dec 2011 17:41:35,949 INFO  ~ Application 'LibraryManagementSystem' is now started !
+15 Dec 2011 17:41:39,772 ERROR ~ 
+
+@68lkk68gl
+Application.issueBook action not found
+
+Action not found
+Action Application.issueBook could not be found. Error raised is No method public static void issueBook() was found in class controllers.Application
+
+play.exceptions.ActionNotFoundException: Action Application.issueBook not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at play.test.FunctionalTest$1.getInvocationContext(FunctionalTest.java:270)
+	at play.Invoker$Invocation.init(Invoker.java:193)
+	at play.Invoker$Invocation.run(Invoker.java:263)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.Exception: No method public static void issueBook() was found in class controllers.Application
+	... 11 more
+15 Dec 2011 17:43:58,768 ERROR ~ 
+
+@68lkk68gn
+Application.issueBook action not found
+
+Action not found
+Action Application.issueBook could not be found. Error raised is No method public static void issueBook() was found in class controllers.Application
+
+play.exceptions.ActionNotFoundException: Action Application.issueBook not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at play.test.FunctionalTest$1.getInvocationContext(FunctionalTest.java:270)
+	at play.Invoker$Invocation.init(Invoker.java:193)
+	at play.Invoker$Invocation.run(Invoker.java:263)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.Exception: No method public static void issueBook() was found in class controllers.Application
+	... 11 more

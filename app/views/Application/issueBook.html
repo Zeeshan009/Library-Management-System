@@ -1,4 +1,16 @@
 #{extends 'main.html' /}
 #{set title:'issueBook.html' /}
 
-Here goes your content.
+<form action="@{Application.issueItem()}" method="post">
+	<input type="label" name="Item ID" value="Item ID"></input>
+	<input type="text" name="itemId"></input>
+	</br>
+	<input type="submit" value="Issue"></input>
+</form>
+
+<form action="@{Application.returnItem()}" method="post">
+	<input type="label" name="Item ID" value="Item ID"></input>
+	<input type="text" name="itemId"></input>
+	</br>
+	<input type="submit" value="Return"></input>
+</form>

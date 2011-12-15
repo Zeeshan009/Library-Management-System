@@ -1,0 +1,10 @@
+#{extends 'main.html' /}
+#{set title:'issueItem.html' /}
+
+#{ifnot issueResult}
+	Book Cannot be Issued. . .
+#{/ifnot}
+
+#{if issueResult}
+	Book is Issued Successfully. . .
+#{/if}
