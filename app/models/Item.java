@@ -21,4 +21,8 @@ public class Item extends Model{
 	public String getTitle(){
 		return title;
 	}
+	public String getCreator()
+	{
+		return creator;
+	}
 }

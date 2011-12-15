@@ -1,0 +1,17 @@
+#{extends 'main.html'/}
+#{set title :'searchItemWithThisTitle'/}
+
+#{ifnot itemListWithGivenTitle}
+No items found
+#{/ifnot}
+
+<ul>
+	#{list items:itemListWithGivenTitle,as :'item'}
+		<li><input type="label" value="${item.title}"/>
+		<input type="label" value="${item.creator}"/>
+	#{/list}
+	#{list items:itemList,as :'item'}
+		<li><input type="label" value="${item.isIssued}"/>
+		<input type="label" value="${item.isReserved}"/>
+	#{/list}
+</ul>

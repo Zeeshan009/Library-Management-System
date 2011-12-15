@@ -1,12 +1,11 @@
 # Routes
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
-
 # Home page
 GET     /                                       Application.index
-GET 	/addbook								Application.addBook
+GET 	/addbook								Application.addItem
 GET		/listbook								Application.listBook
- 
+GET 	/searchItemByTitle						Application.searchItemByTitle	
 # Ignore favicon requests
 GET     /favicon.ico                            404
 

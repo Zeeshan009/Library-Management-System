@@ -25,9 +25,10 @@ public class ApplicationTest extends FunctionalTest {
     	assertIsOk(response);
     }
     
+    
     @Test
-    public void shouldGetItemByTitle(){
-    	Response response = GET("/getItem");
+    public void shouldReturnListOfBooksOfGivenTitle(){
+    	Response response = GET("/searchItemByTitle");
     	assertIsOk(response);
     }
 }

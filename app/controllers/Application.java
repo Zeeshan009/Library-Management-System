@@ -31,6 +31,26 @@ public class Application extends Controller {
 		addItem();
 	}
 
+	public static void searchItemByTitle()
+	{
+			render();
+	}
+	public static void searchItemWithThisTitle(String title)
+	{
+		List itemListWithGivenTitle=Item.find("byTitle", title).fetch();
+		List itemsInRegistry=ItemRegistry.findAll();
+		List itemList=new ArrayList();
+		for(Object item: itemListWithGivenTitle)
+		{
+			for(Object itemRegis :itemsInRegistry)
+			{
+				if(((Model) item).getId().equals(((Model) itemRegis).getId()))
+					itemList.add(itemRegis);
+			}
+		}
+	
+		render(itemListWithGivenTitle,itemList);
+	}
 	public static void index() {
 		render();
 	}
